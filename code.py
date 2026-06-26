@@ -176,6 +176,7 @@ else:
         KC.TD(KC.A, KC.CAPS),KC.S,KC.D,KC.F,KC.G,
         KC.H, KC.J, KC.K, KC.L, KC.CCEDILLA,
 
+        
         # Row 3 (era Row 1)
         KC.HT(KC.Z, KC.LGUI),KC.HT(KC.X, KC.LALT),KC.HT(KC.C, KC.LCTRL),KC.HT(KC.V, KC.LSHIFT),KC.B,
 
@@ -183,9 +184,9 @@ else:
 
         # Thumb
         XXXX,XXXX,KC.SPC,KC.BSPC,KC.LT(1, KC.TAB),
-        KC.LT(2,KC.ENT), KC.SPC, XXXX, XXXX, XXXX,
+        KC.LT(2,KC.ENT), KC.SPC, KC.F22, XXXX, XXXX,
     ],
-
+   
     # Layer 1
     [
         # Row 1 (era Row 3)
@@ -197,12 +198,13 @@ else:
 
 
         KC.QUOTE,        KC.NUBS,XXXX,XXXX,XXXX,
-        XXXX, KC.MINS, KC.EQL, KC.LBRC, KC.RBRC,
+        XXXX, KC.MINS, KC.EQL, XXXX, KC.LBRC,
+        # XXXX, KC.MINS, KC.EQL, KC.LBRC, KC.RBRC,
 
+        
         # Row 3 (era Row 1)
         KC.HT(KC.NON_US_BACKSLASH, KC.LGUI),KC.HT(CTR_Z, KC.LALT),KC.HT(CTR_C, KC.LCTRL),KC.HT(CTR_V, KC.LSHIFT),XXXX,
-
-        XXXX, KC.HT(KC.GRAVE, KC.RSHIFT), KC.HT(KC.TILDE, KC.RCTRL), KC.HT(KC.SLASH, KC.RALT), KC.HT(XXXX, KC.LGUI),
+        XXXX, KC.HT(KC.GRAVE, KC.RSHIFT), KC.HT(KC.TILDE, KC.RCTRL), KC.HT(KC.SLASH, KC.RALT), KC.HT(KC.RBRC , KC.LGUI),
 
         # Thumb
 
