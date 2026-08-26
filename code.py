@@ -1,5 +1,4 @@
 import board
-
 from kmk.modules.holdtap import HoldTap
 from kmk.modules.layers import Layers
 from kmk.kmk_keyboard import KMKKeyboard
@@ -184,7 +183,7 @@ else:
 
         # Thumb
         XXXX,XXXX,KC.SPC,KC.BSPC,KC.LT(1, KC.TAB),
-        KC.LT(2,KC.ENT), KC.SPC, KC.F22, XXXX, XXXX,
+        KC.LT(2,KC.ENT), KC.SPC, KC.F20, XXXX, XXXX,
     ],
    
     # Layer 1
