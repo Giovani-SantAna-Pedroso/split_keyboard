@@ -195,14 +195,13 @@ def maybe_make_more_ascii(candidate: str) -> Optional[Key]:
         
         (54, ('COMMA', 'COMM', ',')),
         (55, ('DOT', 'PERIOD', '.')),
+        # (56, ('SLASH', 'SLSH', '/', 'QUESTION')),
         (135, ('SLASH', 'SLSH', '/', 'QUESTION')),
     )
 
     for code, names in codes:
         if candidate in names:
             return make_key(names=names, constructor=KeyboardKey, code=code)
-
-
 
 def maybe_make_fn_key(candidate: str) -> Optional[Key]:
     codes = (

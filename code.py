@@ -1,4 +1,6 @@
 import board
+
+
 from kmk.modules.holdtap import HoldTap
 from kmk.modules.layers import Layers
 from kmk.kmk_keyboard import KMKKeyboard
@@ -9,6 +11,7 @@ from kmk.modules.split import Split, SplitSide, SplitType
 from kmk.modules.macros import Macros, Press, Release, Tap
 from kmk.extensions.media_keys import MediaKeys
 from storage import getmount
+
 
 keyboard = KMKKeyboard()
 keyboard.diode_orientation = DiodeOrientation.COL2ROW
@@ -159,6 +162,7 @@ if "_O_" in device_name:
                 XXXX, XXXX, KC.AUDIO_MUTE, KC.AUDIO_VOL_DOWN, KC.AUDIO_VOL_UP,
                 XXXX, XXXX, XXXX, XXXX, XXXX, 
             ]
+            
     ]
 else: 
 # Keymap
@@ -203,7 +207,8 @@ else:
         
         # Row 3 (era Row 1)
         KC.HT(KC.NON_US_BACKSLASH, KC.LGUI),KC.HT(CTR_Z, KC.LALT),KC.HT(CTR_C, KC.LCTRL),KC.HT(CTR_V, KC.LSHIFT),XXXX,
-        XXXX, KC.HT(KC.GRAVE, KC.RSHIFT), KC.HT(KC.TILDE, KC.RCTRL), KC.HT(KC.SLASH, KC.RALT), KC.HT(KC.RBRC , KC.LGUI),
+        XXXX, KC.HT(KC.GRAVE, KC.RSHIFT), KC.HT(KC.TILDE, KC.RCTRL), KC.SLASH, KC.HT(KC.RBRC , KC.LGUI),
+        # XXXX, KC.HT(KC.GRAVE, KC.RSHIFT), KC.HT(KC.TILDE, KC.RCTRL), KC.HT(KC.SLASH, KC.RALT), KC.HT(KC.RBRC , KC.LGUI),
 
         # Thumb
 
