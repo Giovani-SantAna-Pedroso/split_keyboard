@@ -1,6 +1,5 @@
 import board
 
-
 from kmk.modules.holdtap import HoldTap
 from kmk.modules.layers import Layers
 from kmk.kmk_keyboard import KMKKeyboard
@@ -11,7 +10,6 @@ from kmk.modules.split import Split, SplitSide, SplitType
 from kmk.modules.macros import Macros, Press, Release, Tap
 from kmk.extensions.media_keys import MediaKeys
 from storage import getmount
-
 
 keyboard = KMKKeyboard()
 keyboard.diode_orientation = DiodeOrientation.COL2ROW
@@ -187,9 +185,9 @@ else:
 
         # Thumb
         XXXX,XXXX,KC.SPC,KC.BSPC,KC.LT(1, KC.TAB),
-        KC.LT(2,KC.ENT), KC.SPC, KC.F20, XXXX, XXXX,
+        KC.LT(2,KC.ENT), KC.SPC, KC.DEL, XXXX, XXXX,
     ],
-   
+ 
     # Layer 1
     [
         # Row 1 (era Row 3)
@@ -213,7 +211,7 @@ else:
         # Thumb
 
         XXXX,XXXX,KC.SPC,KC.BSPC,KC.TAB,
-        KC.ENT, KC.SPC, XXXX, XXXX, XXXX,
+        KC.ENT, KC.SPC, KC.F20, XXXX, XXXX,
     ],
 
     # Layer 2
@@ -229,7 +227,7 @@ else:
 
         # Row 3 (era Row 1)
         XXXX, XXXX, XXXX, XXXX, XXXX,
-        XXXX, XXXX, XXXX, KC.PRINT_SCREEN, KC.F12,
+        XXXX, KC.F17, KC.F18, KC.PRINT_SCREEN, KC.F12,
 
         # Thumb
         XXXX,XXXX,KC.AUDIO_MUTE,KC.AUDIO_VOL_DOWN,KC.AUDIO_VOL_UP,
